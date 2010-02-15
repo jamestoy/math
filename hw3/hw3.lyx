@@ -1,0 +1,187 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MTH127: Homework 3
+\end_layout
+
+\begin_layout Author
+james francis toy iv
+\end_layout
+
+\begin_layout Date
+2010-02-03
+\end_layout
+
+\begin_layout Enumerate
+Since the entry at 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ is the coefficient of 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ in equation i, 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ returns 4 at 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ can only return 4 when 
+\begin_inset Formula $i=j$
+\end_inset
+
+.
+ Also we can note here that this means the diagonal entries of A are 4.
+ For the case when 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ returns -1 it is a bit more tricky.
+ 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ returns -1 when 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ is adjacent to 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ The rest of the matrix A are 0 since we know nothing else matters for setting
+ up the equation.
+\end_layout
+
+\begin_layout Enumerate
+Using information from the first problem we know the coefficients are -1
+ when 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ are adjacent and vice versa.
+ Also since the diagonal is filled with 4 since 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ returns 4 @ 
+\begin_inset Formula $i=j$
+\end_inset
+
+ the matrix must be symmetrical.
+\end_layout
+
+\begin_layout Enumerate
+I do not understand what semidefinite means.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $k=50$
+\end_inset
+
+, 7500 variables; 
+\begin_inset Formula $size(A)=7500^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+standard MB (with respect to computer memory) == 1048576 bytes 
+\begin_inset Formula $(1024^{2},2^{20})$
+\end_inset
+
+.
+ So we would use size(A) * 8 (bytes), this would yield 450000000 bytes;
+ however consider the MB constraints so : 
+\begin_inset Formula $450000000/1024^{2}=429MB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+whos (at 
+\begin_inset Formula $k=50$
+\end_inset
+
+) returns : A 7500x7500 475204 double sparse
+\end_layout
+
+\begin_layout Enumerate
+I dont know what density is.
+\end_layout
+
+\begin_layout Enumerate
+cond_num = 3.0991e+03
+\end_layout
+
+\begin_layout Enumerate
+relative_error = 6.8814e-13
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Seems like the shape is a negation of some kind; it went from being convex
+ to concave.
+ I do not know what a Laplacian is.
+\end_layout
+
+\end_body
+\end_document
