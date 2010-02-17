@@ -5,7 +5,7 @@ function y = resynth(freqs, coeffs, len)
 %	signal which is returned in 'y'.
 
 % setup: init and fill Y with the coefficients and order based on freqs vector
-Y = zeros(len);
+Y = zeros(0,len);
 Y(freqs(1:length(freqs))) = coeffs(1:length(coeffs));
 
 % ifft, coversion to real, ensure span[-1,1],  and account for compressaudio's dropped negative freqs
