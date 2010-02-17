@@ -5,18 +5,18 @@ function y = resynth(freqs, coeffs, len)
 %	signal which is returned in 'y'.
 
 % setup: init and fill Y with the coefficients and order based on freqs vector
-Y = zeros(len); % init and allocate mem for 
 Y(freqs(1:length(freqs))) = coeffs(1:length(coeffs));
 
 % ifft, coversion to real, ensure span[-1,1],  and account for compressaudio's dropped negative freqs
 y = ifft(Y); % inverse fast fourier transform
 y = real(y); % convert everything to reals
+y = y * 2;   % account for dropped negative values in compressaudio
+
+max = max(abs(y));
 
 % rescale if necessary
-if max(abs(y)) > 1
-        y = y ./ max(abs(y)); %ALTERNATE :: -1 + (1 - (-1)) * (value - min)/(max-min)
+if max > 1
+        y = y ./ max;
 end % if
-
-y = [y y];   % account for negative freqs deleted in compress
 
 end % resynth
