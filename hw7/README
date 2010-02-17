@@ -1,0 +1,13 @@
+4) 
+
+5) 1/2 the size. NOTE: here n = length(y)
+
+EDU>> whos
+  Name            Size                Bytes  Class     Attributes
+
+  Fs              1x1                     8  double              
+  coeffs      16487x1                131896  single    complex   
+  freqs       16487x1                 32974  uint16              
+  len             1x1                     8  double              
+  new_y           1x16487            131896  double              
+  y           32974x1                263792  double 
