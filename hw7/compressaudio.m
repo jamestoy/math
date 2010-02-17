@@ -13,8 +13,8 @@ X = fft(x);
 amps = abs(X(1:len/2));
 [s,ind] = sort(amps, 'descend');
 
-freqs = ind(1:length(ind));		%n);
-coeffs = X(freqs(1:length(freqs)));	%n));
+freqs = ind;  %(1:length(ind));
+coeffs = X(freqs(1:length(freqs)));
 
 % cut out some fat (we are making these shorts / uint16)
 coeffs = single(coeffs);
