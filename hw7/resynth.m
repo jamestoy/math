@@ -5,7 +5,7 @@ function y = resynth(freqs, coeffs, len)
 %	signal which is returned in 'y'.
 
 % setup
-Y = coeffs(freqs(1:len)); % fill Y with the coefficients and order based on freqs vector
+Y(freqs(1:length(freqs))) = coeffs(1:length(coeffs)); % fill Y with the coefficients and order based on freqs vector
 Y = real(Y); % convert everything to reals
 Y = Y * 2; % account for negative freqs deleted in compress
 
