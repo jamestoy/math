@@ -1,0 +1,213 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+james francis toy iv
+\end_layout
+
+\begin_layout Standard
+homework 9
+\end_layout
+
+\begin_layout Enumerate
+setup equations and find exact integrals
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{00}=2x^{3}-3x^{2}+1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{01}=-2x^{3}+3x^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{10}=x^{3}-2x^{2}+x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{11}=x^{3}-x^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{00}^{'}=1/2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{01}^{'}=1/2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{10}^{'}=1/12$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h_{11}^{'}=-1/12$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+compute pk(x) dx integral
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\int_{0}^{1}y_{k}h_{00}+hd_{k}h_{10}+y_{k+1}+y_{k+1}h_{01}+hd_{k+1}h_{11}dt\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+=\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\left(\frac{y_{k}}{2}+\frac{hd_{k}}{12}+\frac{y_{k+1}}{2}-\frac{hd_{k+1}}{12}\right)h\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+now we can sum them from 
+\begin_inset Formula $k=0$
+\end_inset
+
+ to 
+\begin_inset Formula $k=n-1$
+\end_inset
+
+ when doing the first few iterations of this we can see the 
+\begin_inset Formula $\frac{hd_{1}}{12}$
+\end_inset
+
+ is cancelling; however, the 
+\begin_inset Formula $\frac{hd_{0}}{12}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{hd_{n}}{12}$
+\end_inset
+
+terms are not.
+ So we can setup an equation for this by separating the constant from 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{0}-d_{n}$
+\end_inset
+
+ to arrive at:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\left(\frac{1}{2}+1+1+...+1+1+\frac{1}{2}\right)y+\frac{h}{12}\left(d_{0}-d_{n}\right)h\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+code
+\end_layout
+
+\begin_layout Enumerate
+code
+\end_layout
+
+\end_body
+\end_document
