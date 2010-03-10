@@ -1,0 +1,119 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+james francis toy iv
+\end_layout
+
+\begin_layout Standard
+homework 8 -- numerical methods with Chris Hardin
+\end_layout
+
+\begin_layout Enumerate
+solve the original equation 
+\begin_inset Formula $y=\frac{ax+b}{cx+d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+y=\frac{ax+b}{cx+d}\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+(cx+d)y=ax+b\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+ax+b-cxy-dy=0\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+write out a linear eqn in (a,b,c,d) that expresses that (7,2) is on the
+ graph of 
+\begin_inset Formula $f(x)$
+\end_inset
+
+
+\begin_inset Formula \[
+7a+b-14c-2d=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+code
+\end_layout
+
+\begin_layout Enumerate
+code
+\begin_inset Formula \[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
