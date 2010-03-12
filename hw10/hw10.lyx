@@ -59,7 +59,7 @@ logistic growth (a.k.a.
 \end_layout
 
 \begin_layout Enumerate
-code
+CODE
 \end_layout
 
 \begin_layout Enumerate
@@ -85,7 +85,7 @@ the population (or y) approaches infinity
 
 \end_deeper
 \begin_layout Enumerate
-code
+CODE
 \end_layout
 
 \begin_layout Enumerate
@@ -99,8 +99,41 @@ code
  after 4 hours?
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
+t = 4.000 y = 0.2869
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Euler's method to model the population
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+one branches to two branches
+\end_layout
+
+\begin_layout Enumerate
+two branches to four branches
+\end_layout
+
+\begin_layout Enumerate
+eight branches?
+\end_layout
+
+\begin_layout Enumerate
+looks like three branches
+\end_layout
+
+\begin_layout Enumerate
+line with an outlier
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+looks parabolic and then branches from two extremes to four extremes --
+ after around 2.5 in the x direction the whole thing gets a bit crazy
 \end_layout
 
 \end_body
