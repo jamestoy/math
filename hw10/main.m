@@ -11,12 +11,12 @@ k = -b;
 C = -a/b;
 
 % solve using ODE
-%[solt, soly] = ode45(@f,[0,4],.02);
-%len = length(solt);
+[solt, soly] = ode45(@f,[0,4],.02);
+len = length(solt);
 
 % solutions at the endpoints
-%t_final = solt(len);
-%y_final = soly(len);
+t_final = solt(len);
+y_final = soly(len);
 
 % euler! solution
 %[ta,ya] = euler(@f,[0,100],0.3,2.20); plot(ta,ya,'o');
