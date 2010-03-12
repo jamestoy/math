@@ -19,4 +19,7 @@ yprime = staph_data(:,2);
 
 A = [y, y.^2];
 v = A\yprime; %v = [a;b];
-v' %v = [a,b]
+v_trans = v'; %v = [a,b]
+
+a = v_trans(1)
+b = v_trans(2)
