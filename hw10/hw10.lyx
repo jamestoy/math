@@ -36,20 +36,71 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Author
 james francis toy iv
+\end_layout
+
+\begin_layout Title
+logistic growth (a.k.a.
+ icky bacteria assignment)
 \end_layout
 
 \begin_layout Date
 2010-03-10
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-homework 10 for MTH127 with professor Chris Hardin
+\begin_layout Enumerate
+code
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+y'=ay+by^{2}=ky(C-y)=-by((-\frac{a}{b})-y)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C=-\frac{a}{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+the population (or y) approaches infinity
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+code
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y_{0}=0.02$
+\end_inset
+
+ what is 
+\begin_inset Formula $y$
+\end_inset
+
+ after 4 hours?
+\end_layout
+
+\begin_layout Enumerate
+
 \end_layout
 
 \end_body

@@ -11,3 +11,12 @@ staph_data = [
    3.2700e-01   3.7899e-02
    3.4700e-01   4.2004e-02
 ];
+
+[m,n] = size(staph_data);
+
+y = staph_data(:,1);
+yprime = staph_data(:,2);
+
+A = [y, y.^2];
+v = A\yprime; %v = [a;b];
+v' %v = [a,b]
